@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F2DBE5A-5F3A-42B3-8B50-97BC2BC047BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MiscareaPamantului</RootNamespace>
+    <AssemblyName>MiscareaPamantului</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PunctulDeNuantie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PunctulDeNuantie.Designer.cs">
+      <DependentUpon>PunctulDeNuantie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RotatiePamantCalculata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RotatiePamantCalculata.Designer.cs">
+      <DependentUpon>RotatiePamantCalculata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SferaCereasca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SferaCereasca.Designer.cs">
+      <DependentUpon>SferaCereasca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemSolar+MiscariDeRevolutie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SistemSolar+MiscariDeRevolutie.Designer.cs">
+      <DependentUpon>SistemSolar+MiscariDeRevolutie.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PunctulDeNuantie.resx">
+      <DependentUpon>PunctulDeNuantie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RotatiePamantCalculata.resx">
+      <DependentUpon>RotatiePamantCalculata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SferaCereasca.resx">
+      <DependentUpon>SferaCereasca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SistemSolar+MiscariDeRevolutie.resx">
+      <DependentUpon>SistemSolar+MiscariDeRevolutie.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-sun-orange-three-dimensional-illustration-png-image_6694186.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth_Western_Hemisphere_transparent_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_Mercury.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_Mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter_%28transparent%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neptune_cutout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saturnx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uranus2-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venus_globe_-_transparent_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jupiter_%28transparent%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
